@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: $blanco;
+    background-color: $negro;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.menu {
+    margin: 15px auto;
+    text-align: center;
+
+    ul li {
+        padding: 10px;
+        display: inline-block;
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+        }
+    }
+}
+
+.redes {
+    ul li {
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.87rem;
+            color: $blanco;
+        }
+    }
+}
