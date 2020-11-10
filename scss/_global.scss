@@ -27,9 +27,11 @@ body {
     flex-direction: row;
 }
 
+#menu-vertical {
+}
+
 .menu {
     margin: 30px;
-    float: left;
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
 
@@ -54,7 +56,7 @@ body {
     padding: auto;
 
     h1 {
-        font-size: 5.62rem;
+        font-size: 4.37rem;
     }
 
     h2, h3 {
@@ -75,10 +77,8 @@ body {
 }
 
 #img-principal {
-    float: right;
-    height: 100vh;
 
-    .img-fluid {
+    .img-sobre {
         width: auto;
         max-width: 40rem;
         height: 100vh;
