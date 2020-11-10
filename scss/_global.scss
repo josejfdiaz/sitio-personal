@@ -21,12 +21,23 @@ body {
     }
 }
 
+.row, .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+div.container-fluid.d-flex.justify.content-end.position-absolute {
+    z-index: 2;
+}
+
+div.position-absolute {
+    
+}
+
 #container {
     margin: 0;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    position: relative;
 }
 
 #menu-vertical {
@@ -72,26 +83,19 @@ body {
 
 }
 
-#img-parent {
-    position: relative;
+#img-parent {}
 
-    .img-sobre {
-        position: absolute;
-        z-index: 9;    
-        left: 5;
-        bottom: 1;
-        width: auto;
-        max-width: 40rem;
-        height: 100vh;
-    } 
+.img-sobre {  
+    max-width: 40rem;
+    height: 100vh;
+} 
 
-    .img-fondo {
-        z-index: 1;
-        width: auto;
-        max-width: 26.87rem;
-        animation: 30s rotate360 infinite linear; 
-    }   
-}
+.img-fondo {
+    z-index: 1;
+    position: absolute;
+    max-width: 26.87rem;
+    animation: 30s rotate36 infinite linear; 
+} 
 
 @keyframes rotate360 {
     to { transform: rotate(360deg); }
@@ -99,7 +103,6 @@ body {
 
 .redes {
     ul li {
-        padding: 10px;
         display: inline-block;
 
         a {
