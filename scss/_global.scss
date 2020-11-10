@@ -25,19 +25,21 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
 }
 
 #menu-vertical {
+    z-index: 99;
+    left: 0;
+    position: absolute;
 }
 
 .menu {
-    margin: 30px;
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
 
-    ul li {
-        padding: 10px;
-        list-style: none;
+    div{
         display: inline-block;
 
         a {
@@ -70,20 +72,29 @@ body {
 
 }
 
-.img-fondo {
-    z-index: 2;
-    width: auto;
-    max-width: 26.87rem;
-}
-
-#img-principal {
+#img-parent {
+    position: relative;
 
     .img-sobre {
+        position: absolute;
+        z-index: 9;    
+        left: 5;
+        bottom: 1;
         width: auto;
         max-width: 40rem;
         height: 100vh;
-        z-index: 3;
-    }
+    } 
+
+    .img-fondo {
+        z-index: 1;
+        width: auto;
+        max-width: 26.87rem;
+        animation: 30s rotate360 infinite linear; 
+    }   
+}
+
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
 }
 
 .redes {
