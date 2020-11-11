@@ -21,19 +21,6 @@ body {
     }
 }
 
-.row, .container-fluid {
-    padding: 0;
-    margin: 0;
-}
-
-div.container-fluid.d-flex.justify.content-end.position-absolute {
-    z-index: 2;
-}
-
-div.position-absolute {
-    
-}
-
 #container {
     margin: 0;
     display: flex;
