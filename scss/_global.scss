@@ -25,6 +25,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+}
+
+#menu-vertical {
+    z-index: 99;
 }
 
 .menu {
