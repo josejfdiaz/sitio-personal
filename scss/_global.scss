@@ -31,21 +31,31 @@ body {
     z-index: 99;
     left: 0;
     position: absolute;
-}
-
-.menu {
+    width: 100vh;
+    height: 15%;
+    max-height: 70px;
+    background-color: hsla(0,0%,0%,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
 
-    div{
-        display: inline-block;
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
 
-        a {
-            color: $blanco;
-            text-decoration: none;
+        div{
+            vertical-align: middle;
+            margin: 25px auto;
+
+            a {
+                color: $blanco;
+                text-decoration: none;
+            }
         }
     }
 }
+
 
 #intro {
     width: auto;
@@ -53,10 +63,11 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: right;
-    padding: auto;
+    padding: 10px;
 
     h1 {
         font-size: 4.37rem;
+        margin: 0 auto 10px auto;
     }
 
     h2, h3 {
@@ -65,14 +76,14 @@ body {
 
     p {
         font-size: 1.12rem;
+        margin: 15px auto;
         color: $negro;
     }
-
 }
 
 #img-parent {}
 
-.img-sobre {  
+.img-principal {  
     max-width: 40rem;
     height: 100vh;
 } 
@@ -91,6 +102,7 @@ body {
 .redes {
     ul li {
         display: inline-block;
+        padding-left: 15px;
 
         a {
             text-decoration: none;
